@@ -81,41 +81,7 @@ header {
     width: max-content;
 }
 
-@media (max-width: 768px) {
-    .logo {
-        font-size: 1.2rem;
-    }
 
-    .nav-menu {
-        flex-direction: column;
-        color: var(--primary);
-        background-color: var(--dark2);
-        position: fixed;
-        left: 100%;
-        top: 4rem;
-        width: 100%;
-        align-items: center;
-        padding: .5rem 0;
-        overflow-y: auto;
-        transition: left .8s;
-    }
-
-    .nav-toggle {
-        display: block;
-        margin: 1rem 1rem;
-        cursor: pointer;
-    }
-
-    .nav-toggle:focus:not(:focus-visible) {
-        outline: none;
-    }
-
-    .nav-menu-visible {
-        left: 0;
-    }
-
-
-}
 
 
 
@@ -217,6 +183,7 @@ header {
     transition: transform 0.2s ease-out;
 }
 
+
 /* Briefcase */
 
 .briefcase {
@@ -231,7 +198,7 @@ header {
 .briefcase-grid {
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     gap: 15px;
     margin: 0 auto;
 }
@@ -249,15 +216,15 @@ header {
 
 /* skills */
 
-section.skills {
+section .skills {
     padding: 4rem 1rem;
 }
 
 .skill {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(380px, auto));
     justify-content: center;
-    gap: 125px;
+    gap: 120px;
     width: 90%;
     margin: 0 auto;
     padding-top: 50px;
@@ -275,7 +242,7 @@ section.skills {
 
 .knowledge, .tools {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
     justify-content: center;
     gap: 25px;
     margin-top: 1rem;
@@ -313,20 +280,30 @@ section.skills {
 .about {
     background-color: var(--dark2);
 
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.about .title-about {
+    padding: 0 40px;
+    text-align: center;
 }
 
 .about-flex {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-gap: 20px;
     width: 90%;
     margin: 0 auto;
     padding: 50px 0 100px;
 }
 
 .about p {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     width: 90%;
     margin: 0 auto;
-    line-height: 2.5rem;
+    line-height: 2em;
     color: var(--secondary-light);
 
 }
@@ -357,7 +334,6 @@ footer {
     text-align: center;
     padding: 1rem;
     color: var(--secondary-light);
-    height: 4rem;
 }
 
 /* icon elements */
@@ -479,4 +455,95 @@ label {
     color: var(--secondary);
     border-radius: 10px;
     padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        color: var(--primary);
+        background-color: var(--dark2);
+        opacity: .95;
+        position: fixed;
+        left: 100%;
+        top: 4rem;
+        width: 100%;
+        align-items: center;
+        padding: .5rem 0;
+        overflow-y: auto;
+        transition: left .8s;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .nav-menu li {
+        flex-direction: column;
+        color: var(--primary);
+        background-color: var(--dark1);
+        border-radius: 5px;
+        padding: 1px 4px;
+    }
+
+    .nav-toggle {
+        display: block;
+        margin: 1rem 1rem;
+        cursor: pointer;
+    }
+
+    .nav-toggle:focus:not(:focus-visible) {
+        outline: none;
+    }
+
+    .nav-menu-visible {
+        left: 0;
+    }
+
+    .about p {
+        font-size: 1em;
+    }
+
+    .about {
+        padding: 0 1rem;
+    }
+
+    .knowledge-part h2,
+    .tools-part h2,
+    .about-info h2 {
+        line-height: 2.2em;
+        text-align: center;
+    }
+
+    .knowledge, .tools {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, auto));
+        justify-content: center;
+        gap: 25px;
+        margin-top: 1rem;
+    }
+
+    .skill {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, auto));
+        justify-content: center;
+        gap: 120px;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    body {
+
+        line-height: 2.2em;
+    }
+
+    footer {
+
+        font-size: .8em;
+        text-align: center;
+        padding: 1rem;
+        color: var(--secondary-light);
+    }
 }
