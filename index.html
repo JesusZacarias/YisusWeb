@@ -6,7 +6,9 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Jesus Zacarias</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="node_modules/eins-modal/dist/css/eins-modal-plain.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+
 </head>
 
 <body>
@@ -41,7 +43,7 @@
                 <div class="contact-icon">
                     <a href="#"><i class="fa-brands fa-github fa-2xl shadow-text"></i></a>
                     <a href="#"><i class="fa-brands fa-linkedin-in fa-2xl shadow-text"></i></a>
-                    <a href="·"><i class="fa-solid fa-envelope fa-2xl shadow-text"></i></a>
+                    <a data-modal-id="myModal"><i class="fa-solid fa-envelope fa-2xl shadow-text"></i></a>
                 </div>
             </div>
         </div>
@@ -169,10 +171,38 @@
 
     </footer>
 
-
+    <!-- Modal -->
+    <div id="myModal" class="eins-modal eins-modal-lg"
+        data-options="openTransition: expandIn; closeTransition: swoopOut;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="pw-content">
+                <div class="eins-modal-preview">
+                    <img src="img/proyecto-produccion.webp" alt="">
+                </div>
+                <div class="eins-modal-text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda ad, mollitia maiores est
+                        earum cum numquam repellendus atque optio odit dolores provident tempore molestias omnis,
+                        nostrum ipsa nobis, maxime dignissimos?</p>
+                    <div class="eins-modal-text-2">
+                        <span>Enlace</span><a href="#">Aqui va la URL</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span>Tecnologias Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="img/wordpress-icon.png" alt="">
+                            <img src="img/woo-icon.png" alt="">
+                            <img src="img/css-icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://kit.fontawesome.com/a7e2f274ed.js" crossorigin="anonymous"></script>
     <script src="js/menu.js"></script>
+    <script src="node_modules/eins-modal/dist/js/eins-modal-plain.min.js"></script>
 </body>
 
 </html>
