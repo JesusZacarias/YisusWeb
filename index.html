@@ -4,9 +4,10 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Jesus Zacarias</title>
+    <title>Yisus ZA</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="node_modules/eins-modal/dist/css/eins-modal-plain.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
 </head>
 
@@ -52,7 +53,7 @@
                 <h2 class="shadow-text"><span class="shadow-text">Briefcase |</span> Portafolio</h2>
                 <div class="briefcase-grid">
                     <div>
-                        <a >
+                        <a data-bs-toggle="modal" data-bs-target="#exampleModal" >
                             <img src="./img/proyecto-produccion.webp" alt="img1">
                         </a>
                     </div>
@@ -116,7 +117,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="tools-part">
                     <h2 class="shadow-text"><span class="shadow-text">Dev Tools |</span> Herramientas</h2>
                     <div class="tools">
@@ -136,12 +136,9 @@
         <section class="about" id="about-me">
             <div class="title-about">
                 <h2 class="shadow-text"><span class="shadow-text">About Me |</span> Acerca de Mí</h2>
-
             </div>
             <div class="about-flex ">
-
                 <div class="about-info">
-
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam asperiores quod placeat nam
                         eius
                         veritatis distinctio blanditiis rem non, aliquam velit aperiam, numquam voluptates repellendus
@@ -153,7 +150,6 @@
                         neque voluptas commodi soluta architecto exercitationem quibusdam modi earum sed repudiandae?
                         Facilis repellat repellendus ab libero obcaecati!</p>
                 </div>
-
                 <div class="social">
                     <a href="#"><img src="./img/icons/github.png" alt="github-social"></a>
                     <a href="#"><img src="./img/icons/linkedin.png" alt="linkedin-social"></a>
@@ -164,17 +160,38 @@
         </section>
 
     </div>
-
+    <div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Launch static backdrop modal
+        </button>
+        
+        <!-- Modal --> 
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    ...
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <p>@2022 copyright | Designed by Yisus ZA</p>
-
     </footer>
-
-    
 
     <script src="https://kit.fontawesome.com/a7e2f274ed.js" crossorigin="anonymous"></script>
     <script src="js/menu.js"></script>
-    <script src="node_modules/eins-modal/dist/js/eins-modal-plain.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
