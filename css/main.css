@@ -205,15 +205,22 @@ h1, h2, h3, span, p {
 .briefcase-grid {
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+    gap: 45px;
+    margin: 0 auto;
+}
+.briefcase-grid div{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     margin: 0 auto;
 }
 
 .briefcase-grid img {
     width: 95%;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: transform 0.2s ease;
+    border: var(--secondary-light) 1px solid;
 }
 
 .briefcase-grid img:hover {
@@ -367,6 +374,36 @@ footer {
 } */
 
 /* modals */
+.modal-content {
+    background-color: var(--dark2);
+}
+
+.btn-close {
+    background-color: #d50000;
+}
+.modal-img { 
+    border-radius: 5px;
+    border: var(--secondary-light) 1px solid;
+}
+
+.modal-descrip {
+    margin: 3rem 0rem;
+    color: var(--secondary-light);
+}
+
+.tec-modal {
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+}
+
+.tec-modal img{
+    margin: 2rem;
+    width: 5rem;
+    height: 5rem;
+}
+
 .eins-modal-content {
     max-width: 800px;
     background-color: var(--dark2);
@@ -459,10 +496,27 @@ label {
     padding: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 992px) {
     .logo {
-        font-size: 1.2rem;
+        padding: 0rem 0rem 2rem 1rem;
     }
+    .nav {
+        flex-wrap: nowrap;
+    }
+}
+@media screen and (max-width: 992px) {
+    .logo {
+        padding: .5rem 0rem .5rem 1rem;
+        font-size: 1.5rem;
+    }
+    .container {
+        max-width: 1400px;
+        margin: 5rem auto 2rem auto;
+        border-radius: 0;
+        background: none;
+        box-shadow: none;
+    }
+    
 
     .nav-menu {
         flex-direction: column;
