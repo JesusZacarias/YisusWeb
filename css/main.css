@@ -35,7 +35,11 @@ header {
     z-index: 100;
 }
 
-h1, h2, h3, span, p {
+h1,
+h2,
+h3,
+span,
+p {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -190,7 +194,6 @@ h1, h2, h3, span, p {
     transition: transform 0.2s ease-out;
 }
 
-
 /* Briefcase */
 
 .briefcase {
@@ -209,7 +212,8 @@ h1, h2, h3, span, p {
     gap: 45px;
     margin: 0 auto;
 }
-.briefcase-grid div{
+
+.briefcase-grid div {
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -254,7 +258,8 @@ section .skills {
     padding: 1rem;
 }
 
-.knowledge, .tools {
+.knowledge,
+.tools {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, auto));
     justify-content: center;
@@ -344,35 +349,6 @@ footer {
     color: var(--secondary-light);
 }
 
-/* icon elements */
-
-/* .icon-elements {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding-bottom: 150px;
-}
-
-.icon-elements a {
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    gap: 15px;
-}
-
-.icon-elements img {
-    width: 70px;
-}
-
-.icon-elements img:hover {
-    transform: scale(1.2);
-}
-
-.icon-elements span:hover {
-    color: var(--secondary);
-} */
-
 /* modals */
 .modal-content {
     background-color: var(--dark2);
@@ -381,7 +357,8 @@ footer {
 .btn-close {
     background-color: #d50000;
 }
-.modal-img { 
+
+.modal-img {
     border-radius: 5px;
     border: var(--secondary-light) 1px solid;
 }
@@ -398,59 +375,32 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
 }
 
-.tec-modal img{
+.tec-modal img {
     margin: 2rem;
     width: 5rem;
     height: 5rem;
 }
-
-.eins-modal-content {
-    max-width: 800px;
+/*Modal Form*/
+#idCorreoTxt {
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
     background-color: var(--dark2);
+    color: var(--primary);
 }
 
-.eins-modal-preview {
-    width: 300px;
-    height: 95%;
-    margin: 0 auto;
+#idCommenTxt {
+    padding-top: 4rem;
+    background-color: var(--dark2);
+    color: var(--primary);
+    height: 20rem;
+    padding-top: 30px;
 }
 
-.eins-modal-preview img {
-    width: 100%;
-    height: 80%;
-    padding: 0 50px 20px 0;
+#idCorreLabel,
+#idCommenLabel {
+    top: -10px;
+
 }
-
-.pw-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
-}
-
-.eins-modal-text {
-    color: var(--secondary-light);
-    padding: 0 20px;
-}
-
-
-.eins-modal-text p {
-    font-size: 1.1rem;
-}
-
-.eins-modal-text-2 {
-    padding: 80px 0 10px;
-}
-
-.eins-modal-text-2 a {
-    color: var(--secondary);
-    margin: 5px;
-}
-
-
-.eins-modal-tec img {
-    width: 50px;
-    height: 50px;
-}
-
 /* contact form */
 
 form {
@@ -500,15 +450,18 @@ label {
     .logo {
         padding: 0rem 0rem 2rem 1rem;
     }
+
     .nav {
         flex-wrap: nowrap;
     }
 }
+
 @media screen and (max-width: 992px) {
     .logo {
         padding: .5rem 0rem .5rem 1rem;
         font-size: 1.5rem;
     }
+
     .container {
         max-width: 1400px;
         margin: 5rem auto 2rem auto;
@@ -516,7 +469,7 @@ label {
         background: none;
         box-shadow: none;
     }
-    
+
 
     .nav-menu {
         flex-direction: column;
@@ -556,6 +509,22 @@ label {
         left: 0;
     }
 
+    /*Modal Correo*/
+    #idCorreoTxt {
+        padding-top: 2.5rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    #idCommenTxt {
+        padding-top: 2rem; 
+    }
+    
+    #idCorreLabel,
+    #idCommenLabel {
+        top: -10px;
+    
+    }
+
     .about p {
         font-size: 1em;
     }
@@ -571,7 +540,8 @@ label {
         text-align: center;
     }
 
-    .knowledge, .tools {
+    .knowledge,
+    .tools {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(120px, auto));
         justify-content: center;
