@@ -71,7 +71,7 @@ p {
     display: none;
 }
 
-#logoYisus {
+.logoYisus {
     margin-left: 3rem;
     max-width: 5rem;
 }
@@ -469,7 +469,7 @@ label {
 
 @media screen and (max-width: 992px) {
 
-    #logoYisus {
+    .logoYisus {
         margin-left: 1rem;
         max-width: 5rem;
     }
