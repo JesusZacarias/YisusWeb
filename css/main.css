@@ -71,7 +71,10 @@ p {
     display: none;
 }
 
-
+#logoYisus {
+    margin-left: 3rem;
+    max-width: 5rem;
+}
 
 .logo {
     font-size: 2rem;
@@ -134,7 +137,7 @@ p {
 }
 
 .profile-img {
-    top: 134px;
+    top: 45px;
     z-index: 4;
 }
 
@@ -307,18 +310,26 @@ section .skills {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     grid-gap: 20px;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     padding: 50px 0 100px;
 }
 
 .about p {
-    font-size: 1.5em;
-    width: 90%;
+    font-size: 1.4em;
+    width: 100%;
     margin: 0 auto;
     line-height: 2em;
     color: var(--secondary-light);
 
+}
+
+#itsp{
+    text-decoration: none;
+    color: var(--secondary-light);
+}
+#itsp:hover{
+    text-decoration: underline;
 }
 
 .social {
@@ -457,6 +468,11 @@ label {
 }
 
 @media screen and (max-width: 992px) {
+
+    #logoYisus {
+        margin-left: 1rem;
+        max-width: 5rem;
+    }
     .logo {
         padding: .5rem 0rem .5rem 1rem;
         font-size: 1.5rem;
@@ -526,18 +542,22 @@ label {
     }
 
     .about p {
-        font-size: 1em;
+        font-size: .8em;
     }
 
     .about {
-        padding: 0 1rem;
+        padding: 0 0rem;
     }
 
     .knowledge-part h2,
-    .tools-part h2,
-    .about-info h2 {
+    .tools-part h2{
         line-height: 2.2em;
         text-align: center;
+    }
+    
+    .about-info p {
+        line-height: 2.4em;
+        text-align: start;
     }
 
     .knowledge,
