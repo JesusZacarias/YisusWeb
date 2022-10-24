@@ -6,7 +6,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Yisus ZA</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="node_modules/eins-modal/dist/css/eins-modal-plain.min.css">
+    <link rel="shortcut icon" href="img/Yisus_logo.png">
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
 </head>
@@ -15,7 +15,9 @@
 
     <header class="header">
         <nav class="nav">
-            <a class="nav-link logo" href="#">LOGO</a>
+            <a class="nav-link logo" href="#">
+                <img id="logoYisus" src="img/Yisus_logo.png" alt="">
+            </a>
             <button class="nav-toggle" aria-label="Abrir Menú">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -41,8 +43,8 @@
                         Sobre
                         Mi</span></a></div>
                 <div class="contact-icon">
-                    <a href="#"><i class="fa-brands fa-github fa-2xl shadow-text"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in fa-2xl shadow-text"></i></a>
+                    <a href="https://github.com/JesusZacarias"><i class="fa-brands fa-github fa-2xl shadow-text"></i></a>
+                    <!-- <a href="#"><i class="fa-brands fa-linkedin-in fa-2xl shadow-text"></i></a> -->
                     <a data-bs-toggle="modal" data-bs-target="#modalCorreo"><i
                             class="fa-solid fa-envelope fa-2xl shadow-text"></i></a>
                 </div>
@@ -66,21 +68,6 @@
                     <div>
                         <a>
                             <img src="./img/proyecto-produccion.webp" alt="img3">
-                        </a>
-                    </div>
-                    <div>
-                        <a>
-                            <img src="./img/proyecto-produccion.webp" alt="img4">
-                        </a>
-                    </div>
-                    <div>
-                        <a>
-                            <img src="./img/proyecto-produccion.webp" alt="img5">
-                        </a>
-                    </div>
-                    <div>
-                        <a>
-                            <img src="./img/proyecto-produccion.webp" alt="img6">
                         </a>
                     </div>
                 </div>
@@ -138,24 +125,29 @@
             <div class="title-about">
                 <h2 class="shadow-text"><span class="shadow-text">About Me |</span> Acerca de Mí</h2>
             </div>
-            <div class="about-flex ">
+            <div class="about-flex">
                 <div class="about-info">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam asperiores quod placeat nam
-                        eius
-                        veritatis distinctio blanditiis rem non, aliquam velit aperiam, numquam voluptates repellendus
-                        quis
-                        porro voluptas veniam facere!</p>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum veritatis, molestias,
-                        aut
-                        neque voluptas commodi soluta architecto exercitationem quibusdam modi earum sed repudiandae?
-                        Facilis repellat repellendus ab libero obcaecati!</p>
+                    <p>
+                        Ingeniero en Sistemas Computacionales graduado del 
+                        <a id ="itsp" href="https://its-purhepecha.edu.mx/" target="_blank"">Instituto Tecnológico Superior P´urhépecha</a>.
+                        <br>
+                        Actualmente me encuentro trabajando como Auxiliar de Sistemas en una empresa de Transportes de Autobuses, 
+                        en donde normalmente desempeño la tarea de dar mantenimiento preventivo y correctivo de equipo de cómputo e impresión, 
+                        instalación de cableado de red y cámaras de seguridad, instalación de barreras automáticas para estacionamientos.
+                    </p>
+                    <p>
+                        También me encargo de desarrollar algunas páginas web para diferentes terminales de autobuses 
+                        de los cuales siguen en etapas finales de desarrollo.
+                    </p>
+                    <p>
+                        Por otro lado soy un apasionado por la tecnología así como de los videojuegos, amante de la música y películas en particular de terror.
+                    </p>
                 </div>
                 <div class="social">
-                    <a href="#"><img src="./img/icons/github.png" alt="github-social"></a>
-                    <a href="#"><img src="./img/icons/linkedin.png" alt="linkedin-social"></a>
-                    <a href="#"><img src="./img/icons/youtube.png" alt="youtube-social"></a>
-                    <a data-modal-id="message"><img src="./img/icons/correo-electronico.png" alt="message-social"></a>
+                    <a href="https://github.com/JesusZacarias"><img src="./img/icons/github.png" alt="github-social"></a>
+                    <!-- <a href="#"><img src="./img/icons/linkedin.png" alt="linkedin-social"></a> -->
+                    <!-- <a href="#"><img src="./img/icons/youtube.png" alt="youtube-social"></a> -->
+                    <a data-bs-toggle="modal" data-bs-target="#modalCorreo"><img src="./img/icons/correo-electronico.png" alt="message-social"></a>
                 </div>
             </div>
         </section>
@@ -173,20 +165,23 @@
                     <div class="text-center">
                         <div class="row">
                             <div class="col-md-12 mx-auto">
-                                <div class="form-floating mb-5">
-                                    <input type="email" class="form-control" id="idCorreoTxt" placeholder="name@example.com">
-                                    <label id="idCorreLabel" for="idCorreoTxt">Correo Electronico</label>
-                                </div>
-                                <div class="form-floating mb-5">
-                                    <textarea class="form-control" placeholder="Escribe tu comentario..."
-                                        id="idCommenTxt"></textarea>
-                                    <label id="idCommenLabel" for="idCommenTxt">Comentario</label>
-                                </div>
-                                <div class="form-floating">
-                                    <button type="button" class="btn btn-outline-info">Enviar</button>
-                                </div>
+                                <form action="https://formspree.io/f/xvoygkno" method="POST">
+                                    <div class="form-floating mb-5">
+                                        <input type="email" name="email" class="form-control" id="idCorreoTxt"
+                                            placeholder="name@example.com">
+                                        <label id="idCorreLabel" for="idCorreoTxt">Correo Electronico</label>
+                                    </div>
+                                    <div class="form-floating mb-5">
+                                        <textarea name="message" class="form-control" placeholder="Escribe tu comentario..."
+                                            id="idCommenTxt"></textarea>
+                                        <label id="idCommenLabel" for="idCommenTxt">Comentario</label>
+                                    </div>
+                                    <!-- your other form fields go here -->
+                                    <div class="form-floating">
+                                        <button type="submit" class="btn btn-outline-info">Enviar</button>
+                                    </div>
+                                </form>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
@@ -216,7 +211,7 @@
                                 </div>
 
                                 <div class="col-sm-6">
-                                    <h3>Tecnologias</h3>
+                                    <h4>Tecnologias Aplicadas</h4>
                                     <div class="tec-modal">
                                         <div>
                                             <img src="img/icons/html-5.png" alt="">
@@ -228,13 +223,10 @@
                                             <img src="img/icons/js.png" alt="">
                                         </div>
                                         <div>
-                                            <img src="img/icons/php.png" alt="">
-                                        </div>
-                                        <div>
                                             <img src="img/icons/git.png" alt="">
                                         </div>
                                         <div>
-                                            <img src="img/icons/servidor-sql.png" alt="">
+                                            <img src="img/icons/formspree.png" alt="">
                                         </div>
                                     </div>
                                 </div>
