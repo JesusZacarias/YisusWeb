@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Press Start 2P");
+/* @import url("https://fonts.googleapis.com/css?family=Press Start 2P");
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -15,7 +17,7 @@
 }
 
 body {
-    font-family: 'Press Start 2P';
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     color: var(--secondary);
     background-color: var(--dark2);
